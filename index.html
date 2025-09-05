@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page</h1>
+  </header>
+
+  <!-- Interactive Section: Theme Toggle -->
+  <section>
+    <h2>Theme Switcher</h2>
+    <button id="themeBtn">Switch Theme</button>
+  </section>
+
+  <!-- Interactive Section: Counter -->
+  <section>
+    <h2>Click Counter</h2>
+    <p>Button clicked: <span id="counter">0</span> times</p>
+    <button id="countBtn">Click Me!</button>
+  </section>
+
+  <!-- Form with Custom Validation -->
+  <section>
+    <h2>Form</h2>
+    <form onsubmit="return validateSignUp()">
+        <input type="text" id="username" placeholder="Enter your username"><br />
+        <input type="email" id="email" placeholder="Enter your email"><br />
+        <input type="password" id="password" placeholder="Enter your password"><br />
+        <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
